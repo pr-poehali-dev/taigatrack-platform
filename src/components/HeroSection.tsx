@@ -53,12 +53,26 @@ const HeroSection = () => {
           </div>
 
           <div className="relative animate-scale-in">
-            <div className="relative z-10">
-              <img
-                src="https://cdn.poehali.dev/files/a51dfb00-010b-4c19-aa3d-96eee8c04be9.png"
-                alt="Путь пользователя на платформе TaigaTrack"
-                className="w-full rounded-2xl shadow-2xl"
-              />
+            <div className="bg-gradient-to-br from-eco-green/20 via-eco-sky/10 to-eco-green/30 rounded-2xl p-12 h-96 flex items-center justify-center relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-eco-green/10 to-eco-sky/10"></div>
+              <div className="relative z-10 text-center space-y-6">
+                <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-lg mx-auto">
+                  <Icon name="Compass" size={40} className="text-eco-green" />
+                </div>
+                <h3 className="text-3xl font-bold text-gray-900">
+                  Путь пользователя
+                </h3>
+                <p className="text-gray-600 max-w-md">
+                  От знакомства с платформой до активного участия в
+                  эко-сообществе
+                </p>
+              </div>
+
+              {/* Декоративные элементы пути */}
+              <div className="absolute top-8 left-8 w-4 h-4 bg-eco-green rounded-full opacity-60"></div>
+              <div className="absolute bottom-12 right-12 w-3 h-3 bg-eco-sky rounded-full opacity-80"></div>
+              <div className="absolute top-1/2 right-8 w-2 h-2 bg-orange-400 rounded-full opacity-50"></div>
+              <div className="absolute bottom-8 left-1/4 w-3 h-3 bg-purple-400 rounded-full opacity-40"></div>
             </div>
             <div className="absolute inset-0 bg-gradient-to-br from-eco-green/20 to-eco-sky/20 rounded-2xl transform rotate-3 -z-10"></div>
           </div>
